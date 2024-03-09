@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer_mainmenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="#B2F4E1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_height="250dp"
+                android:onClick="buy"
+
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    app:srcCompat="@drawable/shoping_cart" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:text="Shop" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="250dp"
+                android:onClick="view_orders"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/view_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/view_order_customer" />
+
+                <TextView
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:text="View Orders" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="250dp"
+                android:onClick="customer_his"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/recent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/view_order_customer" />
+
+                <TextView
+                    android:id="@+id/his"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:text="History" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="250dp"
+                android:onClick="logout"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    app:srcCompat="@drawable/logout" />
+
+                <TextView
+                    android:id="@+id/lgout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:text="Logout" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

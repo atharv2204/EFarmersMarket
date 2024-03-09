@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "841057415004",
+    "project_id": "e-farmers-market",
+    "storage_bucket": "e-farmers-market.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841057415004:android:c3ffd46bdb71fb65a9db99",
+        "android_client_info": {
+          "package_name": "com.atharv.efarmersmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841057415004-olps5249h936kvsfsrcojth121t0fr12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS3zM4gmEyW6Qy8HmfT592bHRWIc-IQPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841057415004-olps5249h936kvsfsrcojth121t0fr12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

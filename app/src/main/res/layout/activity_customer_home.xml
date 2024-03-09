@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#F8C9AF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Select Category what you want to buy" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/Vegetables"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp"
+                android:onClick="order_vegetables"
+                >
+
+                <ImageView
+                    android:id="@+id/vegetable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    app:srcCompat="@drawable/vegetables"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetables"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal|bottom"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="300dp"
+                android:id="@+id/Fruits"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="50dp"
+                android:onClick="order_fruits">
+
+                <ImageView
+                    android:id="@+id/fruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    app:srcCompat="@drawable/fruits"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/fru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fruits"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal|bottom"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:onClick="order_pulses"
+                android:id="@+id/Pulses">
+
+                <ImageView
+                    android:id="@+id/pulse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/pulses" />
+
+                <TextView
+                    android:id="@+id/pul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulses"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal|bottom"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp"
+                android:onClick="order_grains"
+                android:id="@+id/Grains">
+
+                <ImageView
+                    android:id="@+id/grain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/grains" />
+
+                <TextView
+                    android:id="@+id/grn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grains"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal|bottom"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
